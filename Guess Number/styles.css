@@ -1,0 +1,69 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+#piano {
+   /* background-color: lightpink; */
+   background-image: url('../image/cat3.gif');
+    width: 992px;
+    height: 290px;
+    margin: 80px auto ;
+    border-radius: 30px;
+    padding: 90px 20px 0;
+    position: relative;
+}
+
+.keys {
+    background-color: rgb(12, 12, 12);
+    width: 949px;
+    height: 180px;
+    padding-left: 2px;
+    overflow: hidden;
+}
+.key {
+    background-color: aquamarine;
+    width: 41px;
+    height: 175px;
+    float: left;
+    margin: 2px;
+    border-radius: 0 0 6px 6px;
+    position: relative;
+}
+.key.black-key::after {
+    background-color: rgb(181, 145, 255);
+    width: 32px;
+    height: 100px;
+    content: "";
+    position: absolute;
+    left: -18px;
+}
+.logo{
+    position: absolute;
+    top: 50px;
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+@media (max-width: 768px) {
+    #piano {
+        width: 358px;
+    }
+    .keys {
+        width: 318px;
+    }
+    
+}
+@media (max-width: 1199px) and (min-width: 769px) {
+    #piano {
+        width: 675px;
+    }
+    .keys {
+        width: 633px;
+    }
+    
+}
