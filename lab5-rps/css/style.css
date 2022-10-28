@@ -95,3 +95,18 @@ header > h1 {
     margin-top: 20px;
     font-weight: bold;
 }
+@keyframes ready {
+    0%,100%{
+        top: 0;
+    }
+    25%{
+        top: -10px;
+    }
+    75%{
+        top:10px;
+    }
+}
+.ready {
+    position:relative;
+    animation: ready 0.01s linear infinite ;
+}
